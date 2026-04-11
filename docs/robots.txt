@@ -1,0 +1,7 @@
+# robots.txt -- gmhapex.com
+# Allow all crawlers. See sitemap.xml for full page index.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://gmhapex.com/sitemap.xml

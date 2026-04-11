@@ -1,0 +1,196 @@
+# =============================================================================
+# .gitignore -- gmhapex.com
+# Static site, currently hand-authored HTML/CSS/JS.
+# This file is structured to accommodate a future generated/build-tool site.
+# =============================================================================
+
+
+# =============================================================================
+# OS FILES
+# =============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+Thumbs.db:encdata
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+
+# =============================================================================
+# EDITORS & IDEs
+# =============================================================================
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+
+# =============================================================================
+# NODE / NPM (future build tooling)
+# If a build process is ever added, these prevent committing generated output
+# and local tooling to the repo.
+# =============================================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Optional npm cache
+.npm
+.yarn-integrity
+
+# dotenv environment files -- never commit secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+
+# =============================================================================
+# BUILD OUTPUT (future)
+# If a static site generator (Eleventy, Hugo, Astro, etc.) is ever added,
+# its generated output should NOT be committed -- docs/ will be the target.
+# Only the docs/ folder produced by the build should be committed.
+# Uncomment the relevant section if/when a build tool is added.
+# =============================================================================
+
+# Eleventy
+# _site/
+
+# Hugo
+# public/
+# resources/_gen/
+
+# Astro
+# .astro/
+# dist/
+
+# General build cache / temp
+.cache/
+.temp/
+.tmp/
+dist/
+build/
+out/
+
+# Sass / CSS preprocessor cache
+.sass-cache/
+*.css.map
+*.scss.map
+
+
+# =============================================================================
+# CLAUDE CODE
+# =============================================================================
+
+# Claude Code session files (generated per session, not project assets)
+.claude/
+!.claude/settings.json
+
+# Any generated code Claude Code might produce during a session
+# that you haven't explicitly decided to keep
+*.claude-backup
+
+
+# =============================================================================
+# SECURITY -- never commit these
+# =============================================================================
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets.*
+credentials.*
+config.local.*
+
+
+# =============================================================================
+# LOGS & DIAGNOSTIC FILES
+# =============================================================================
+
+logs/
+*.log
+npm-debug.log
+yarn-debug.log
+
+
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
+
+# Compressed files (if generated during a workflow)
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage / testing output (future)
+coverage/
+*.lcov
+.nyc_output/
