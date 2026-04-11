@@ -61,13 +61,10 @@ At the start of every session:
   - `.github/claude/AGENT_BRIEF.md` -- This file; full project brief and history
   - `.github/claude/context/style-guide.md` -- Visual style reference
   - `.github/claude/context/architecture.md` -- File structure and technical conventions
-- **Pending:** Email swap from geoffmhull@gmail.com to geoff@gmhapex.com -- waiting on Cloudflare email routing setup. Run `grep -rn "EMAIL PLACEHOLDER" docs/ --include="*.html"` to find all instances.
-- **Pending:** Replace `docs/assets/img/geoff-hull.jpg` placeholder with the real headshot (same filename).
 - **Known issues:** None.
 - **Roadmap / next session goals:** 
   - Configure GitHub Pages in repo Settings → Pages → Source: Deploy from branch, folder: /docs
   - Set up Cloudflare proxy for gmhapex.com pointing to GitHub Pages
-  - Swap email once geoff@gmhapex.com is active
   - Add new blog posts as Geoff writes them
 
 ---
@@ -79,7 +76,6 @@ These rules apply to every session without exception:
 - All output must be static HTML, CSS, and vanilla JavaScript only. No frameworks, no build tools, no package managers.
 - The site must work correctly on GitHub Pages and behind Cloudflare's proxy with full SSL.
 - Use relative paths throughout. Base domain is gmhapex.com.
-- The email address geoffmhull@gmail.com is a placeholder. It must be stored in a single, clearly commented location in the codebase so Geoff can replace it with geoff@gmhapex.com in one edit when Cloudflare email routing is live.
 - Every page must include: a canonical URL tag, OpenGraph meta tags (og:title, og:description, og:url, og:type, og:image), and Twitter Card meta tags (summary_large_image).
 - Every page must include JSON-LD structured data. Home and About use Person schema. The Consulting page uses ProfessionalService schema with the four service areas represented as hasOfferCatalog entries.
 - robots.txt must allow all crawlers and reference sitemap.xml.
@@ -228,7 +224,7 @@ In an environment where clients increasingly expect partners who can implement, 
 
 - **LinkedIn:** https://www.linkedin.com/in/gmhull2025
 - **Twitter/X:** @geoffmhull
-- **Email:** geoffmhull@gmail.com *(placeholder -- replace with geoff@gmhapex.com once Cloudflare email routing is live)*
+- **Email:** geoff@gmhapex.com
 - **Domain:** gmhapex.com *(registered with Cloudflare)*
 
 ---

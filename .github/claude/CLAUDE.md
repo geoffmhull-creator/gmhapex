@@ -84,18 +84,6 @@ Never use absolute paths in `href` or `src`. og:image and twitter:image use
 - Code must be clean, well-commented, and maintainable by a non-developer.
 
 
-## Email placeholder
-
-`geoffmhull@gmail.com` is a temporary address. Every HTML footer and the connect page body
-has this comment directly above the email link:
-
-```html
-<!-- EMAIL PLACEHOLDER: Replace geoffmhull@gmail.com with geoff@gmhapex.com once Cloudflare email routing is live -->
-```
-
-To find all instances: `grep -rn "EMAIL PLACEHOLDER" docs/ --include="*.html"`
-
-
 ## Brand voice -- apply to all content
 
 **Do:** Plain language. Short sentences. Active voice. Confident but not boastful. Warm and human.
