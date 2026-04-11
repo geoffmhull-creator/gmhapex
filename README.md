@@ -1,2 +1,3 @@
 # Gmhapex
-Gmhqpex
+
+This repository is for a personal consulting site.
