@@ -519,6 +519,22 @@ section {
   font-weight: 500;
 }
 
+/* Service block photo -- sits between header and problem callout */
+.service-block__img {
+  border-radius: 6px;
+  overflow: hidden;
+  height: 190px;
+  margin-bottom: 1.25rem;
+  background: var(--blue-light);
+}
+.service-block__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.65) brightness(0.95);
+}
+
 /* --- Blog ----------------------------------------------------------------- */
 .post-list { display: flex; flex-direction: column; gap: 2rem; }
 
@@ -553,6 +569,38 @@ section {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.65;
+}
+
+/* Post card thumbnail -- bleeds to card edges */
+.post-card__img {
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  height: 160px;
+  margin: -1.75rem -2rem 1.5rem;
+  background: var(--blue-light);
+}
+.post-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.65) brightness(0.95);
+}
+
+/* Card thumbnail (home page service/blog cards) -- bleeds to card edges */
+.card__img {
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  height: 140px;
+  margin: -2rem -2rem 1.25rem;
+  background: var(--blue-light);
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.65) brightness(0.95);
 }
 
 /* Blog post page */
@@ -847,6 +895,154 @@ section {
 
 .error-page h1 { margin-bottom: 0.75rem; }
 .error-page p  { color: var(--text-muted); margin-bottom: 2rem; }
+
+/* --- Process steps -------------------------------------------------------- */
+.process-steps {
+  margin: 2.5rem 0;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 0 1.5rem;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.process-step:last-child { padding-bottom: 0; }
+
+/* Vertical connector line between steps */
+.process-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: 52px;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.process-step__num {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid var(--blue);
+  position: relative;
+  z-index: 1;
+}
+
+.process-step__content { padding-top: 0.6rem; }
+
+.process-step__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 0.5rem;
+}
+
+.process-step__body {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.process-step__outcome {
+  display: inline-block;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--green-dark);
+  background: var(--green-light);
+  border-left: 3px solid var(--green);
+  padding: 0.45rem 0.85rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.process-step__outcome::before {
+  content: 'You get: ';
+  font-weight: 700;
+}
+
+/* --- Pricing cards -------------------------------------------------------- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .pricing-grid { grid-template-columns: 1fr; max-width: 460px; }
+}
+
+.pricing-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card--featured {
+  border-color: var(--blue);
+  box-shadow: 0 4px 24px rgba(58, 124, 165, 0.12);
+}
+
+.pricing-card__label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--green-dark);
+  margin-bottom: 0.65rem;
+}
+
+.pricing-card--featured .pricing-card__label { color: var(--blue); }
+
+.pricing-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 0.3rem;
+}
+
+.pricing-card__duration {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.pricing-card__price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  margin-bottom: 0.2rem;
+}
+
+.pricing-card__price-note {
+  font-size: 0.775rem;
+  color: var(--text-light);
+  margin-bottom: 1.1rem;
+}
+
+.pricing-card__body {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex-grow: 1;
+}
+
+.pricing-card__cta { margin-top: 1.5rem; }
 
 /* --- Divider -------------------------------------------------------------- */
 .divider {

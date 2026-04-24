@@ -137,11 +137,25 @@ but because the processes, governance, and change management around it are not b
 for it. He works alongside clients through implementation, not just advisory phases,
 and he communicates in plain language that makes complex ideas approachable."
 
+## Engagement model
+
+Geoff works through three engagement types:
+- Rapid Assessment (2-3 weeks, fixed fee): Focused diagnostic of one problem area.
+  Delivers an honest picture of what is actually happening and a prioritised action plan.
+- Project Engagement (4-12 weeks, fixed fee): Delivery against a defined outcome.
+  Scope, timeline, investment, and success criteria agreed before work starts.
+- Advisory Retainer (monthly, no long-term lock-in): Ongoing senior IT and AI guidance.
+  Right for sustained transformation programmes or organisations that need consistent
+  senior-level input alongside internal teams.
+
+Full process and pricing at https://gmhapex.com/how-i-work.html
+
 ## Site structure
 
 - / (index.html) -- Home / hero: value proposition and overview
 - /about.html -- Full narrative bio and professional background
 - /consulting.html -- Four service areas with full narrative descriptions
+- /how-i-work.html -- Engagement model: process steps, outcomes, and pricing tiers
 - /opportunities.html -- Open invitation for consulting, roles, and collaboration
 - /blog/ -- Thought leadership blog
 - /connect.html -- Contact and social links
